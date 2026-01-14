@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VideoAR Gallery</title>
+  <link rel="stylesheet" href="./static/css/video-grid.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <h1 class="title">VideoAR: Autoregressive Video Generation via Next-Frame & Scale Prediction</h1>
+    <p class="authors">
+        Longbin Ji &nbsp;·&nbsp; Xiaoxiong Liu &nbsp;·&nbsp; Junyuan Shang &nbsp;·&nbsp;
+        Shuohuan Wang &nbsp;·&nbsp; Yu Sun &nbsp;·&nbsp; Hua Wu &nbsp;·&nbsp; Haifeng Wang
+      </p>
+      <p class="authors">
+        ERNIE Team, Baidu
+      </p>
+
+      <div class="link-buttons">
+        <a class="link-button" href="https://arxiv.org/abs/2601.05966" target="_blank" rel="noopener">arXiv</a>
+        <a class="link-button" href="https://github.com/ernie-research/VideoAR" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    
+      <!-- <p class="subtitle">Hover or touch to play</p> -->
+    
+      <div class="abstract">
+        <h3>Abstract</h3>
+        <p>
+          Recent advances in video generation have been dominated by diffusion and flow-matching models,
+          which produce high-quality results but remain computationally intensive and difficult to scale.
+          In this work, we introduce VideoAR, the first large-scale Visual Autoregressive (VAR) framework for
+          video generation that combines multi-scale next-frame prediction with autoregressive modeling.
+          VideoAR disentangles spatial and temporal dependencies by integrating intra-frame VAR modeling with
+          causal next-frame prediction, supported by a 3D multi-scale tokenizer that efficiently encodes
+          spatio-temporal dynamics. To improve long-term consistency, we propose Multi-scale Temporal RoPE,
+          Cross-Frame Error Correction, and Random Frame Mask, which collectively mitigate error propagation
+          and stabilize temporal coherence. Our multi-stage pretraining pipeline progressively aligns spatial
+          and temporal learning across increasing resolutions and durations. Empirically, VideoAR achieves
+          new state-of-the-art results among autoregressive models, improving FVD on UCF-101 from 99.5 to 88.6
+          while reducing inference steps by over 10x, and reaching a VBench score of 81.74—competitive with
+          diffusion-based models an order of magnitude larger. These results demonstrate that VideoAR narrows
+          the performance gap between autoregressive and diffusion paradigms, offering a scalable, efficient,
+          and temporally consistent foundation for future video generation research.
+        </p>
+      </div>
+      <p class="tips">
+        Touch videos for playing. Video Loading would take a while. Please wait patiently.
+      </p>
+    </header>
+    <!-- <p class="subtitle">Hover or touch to play</p>
+    <p class="subtitle">Recent advances in video generation have been dominated by diffusion and flow-matching models, which produce high-quality results but remain computationally intensive and difficult to scale. In this work, we introduce VideoAR, the first large-scale Visual Autoregressive (VAR) framework for video generation that combines multi-scale next-frame prediction with autoregressive modeling. VideoAR disentangles spatial and temporal dependencies by integrating intra-frame VAR modeling with causal next-frame prediction, supported by a 3D multi-scale tokenizer that efficiently encodes spatio-temporal dynamics. To improve long-term consistency, we propose Multi-scale Temporal RoPE, Cross-Frame Error Correction, and Random Frame Mask, which collectively mitigate error propagation and stabilize temporal coherence. Our multi-stage pretraining pipeline progressively aligns spatial and temporal learning across increasing resolutions and durations. Empirically, VideoAR achieves new state-of-the-art results among autoregressive models, improving FVD on UCF-101 from 99.5 to 88.6 while reducing inference steps by over 10x, and reaching a VBench score of 81.74-competitive with diffusion-based models an order of magnitude larger. These results demonstrate that VideoAR narrows the performance gap between autoregressive and diffusion paradigms, offering a scalable, efficient, and temporally consistent foundation for future video generation research.</p> -->
+  </header>
+
+  <h2 class="section-title">VideoAR-Pro Gallery</h2>
+  <h2 class="subtitle">VideoAR-Pro is a preliminary internal prototype built upon VideoAR, exploring unified video-audio AR generation.</h2>
+
+  <section class="gallery gallery-eb5" id="gallery-eb5"></section>
+
+  <h2 class="section-title">VideoAR-4B Gallery</h2>
+  <section class="gallery gallery-videoar" id="gallery-videoar"></section>
+
+  <section class="bibtex">
+    <h2 class="section-title">BibTeX</h2>
+    <pre><code>@misc{ji2026videoarautoregressivevideogeneration,
+      title={VideoAR: Autoregressive Video Generation via Next-Frame & Scale Prediction},
+      author={Longbin Ji and Xiaoxiong Liu and Junyuan Shang and Shuohuan Wang and Yu Sun and Hua Wu and Haifeng Wang},
+      year={2026},
+      eprint={2601.05966},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2601.05966},
+}</code></pre>
+  </section>
+
+  <section class="license">
+    <p>
+      This website is licensed under a
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">
+        Creative Commons Attribution-ShareAlike 4.0 International License
+      </a>.
+    </p>
+    <p>
+      We borrow the source code of this website from
+      <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a>
+      <a href="https://github.com/nerfies/nerfies.github.io" target="_blank" rel="noopener">source code</a>.
+    </p>
+  </section>
+
+  <script src="./static/js/video-grid.js"></script>
+</body>
+</html>

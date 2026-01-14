@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #222, #000);
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.link-button:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.abstract {
+  max-width: 1100px;
+  margin: 60px auto 30px;
+  padding: 0 20px;
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 400;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Georgia", serif;
+  opacity: 0.9;
+}
+
+.abstract h3 {
+  text-align: center;
+  margin: 0 0 22px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.abstract p {
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Section title */
+.section-title {
+  max-width: 1700px;
+  margin: 70px auto 20px;
+  padding-left: 20px;
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+.subtitle {
+  max-width: 1700px;
+  margin: 70px auto 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Grid */
+.gallery {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+}
+
+.gallery-eb5 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  padding-bottom: 80px;
+}
+
+.gallery-videoar {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  padding-bottom: 80px;
+}
+
+.bibtex {
+  max-width: 1700px;
+  margin: 40px auto 100px;
+  padding: 0 20px;
+}
+
+.bibtex .section-title {
+  text-align: center;
+}
+
+.bibtex pre {
+  margin: 20px 0 0;
+  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.bibtex code {
+  color: #f2f2f2;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.license {
+  max-width: 1700px;
+  margin: 20px auto 80px;
+  padding: 0 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+}
+
+.license p {
+  margin: 8px 0;
+}
+
+.license a {
+  color: #7fb1ff;
+  text-decoration: none;
+}
+
+.license a:hover {
+  text-decoration: underline;
+}
+/* Card */
+.video-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #111;
+  box-shadow: 0 25px 70px rgba(0,0,0,.6);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 40px 100px rgba(0,0,0,.9);
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .gallery-eb5 { grid-template-columns: repeat(2, 1fr); }
+  .gallery-videoar { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .gallery-eb5,
+  .gallery-videoar { grid-template-columns: repeat(2, 1fr); }
+}
